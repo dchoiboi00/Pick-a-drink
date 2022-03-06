@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Questions from "./pages/Questions";
 import Error from "./pages/Error";
 import Result from "./pages/Result";
-//import components
+
 import logo from "./img/NBA_logo.png";
 function App() {
   return (
@@ -14,19 +14,14 @@ function App() {
         <Link to="/">
           <img src={logo} alt="logo" className="logo" />
         </Link>
-
         <ul className="nav-links">
           <li>
             <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
           </li>
         </ul>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* About */}
         <Route path="/questions/:id" element={<Questions />} />
         <Route path="*" element={<Error />} />
         <Route path="/result" element={<Result />} />

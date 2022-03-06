@@ -8,7 +8,7 @@ Variables
   --primaryColor: #5386a8;
   --primaryDarkColor: #c02c03;
   --mainWhite: #fff;
-  --offWhite: #f7f7f7;
+  --offWhite: #e1f2f5;
   --mainBackground: #ffffff;
   --mainOverlay: rgba(35, 10, 36, 0.4);
   --mainBlack: #222;
@@ -16,8 +16,10 @@ Variables
   --darkGrey: #afafaf;
   --mainRed: #bd0303;
   --mainTransition: all 0.3s linear;
-  --mainSpacing: 0.3rem;
-  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --homeBackground: #d0eceb;
+  --darkText: #0e1d2b;
+  --mainSpacing: 0.08rem;
+  --lightShadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
   --mainBorderRadius: 0.25rem;
   --smallWidth: 85vw;
@@ -92,9 +94,10 @@ Navbar
   height: 7rem;
   display: flex;
   align-items: center;
+  border-bottom: 2px solid var(--primaryColor);
+  box-shadow: var(--lightShadow);
 }
 .nav-links {
-  margin-left: 10rem;
   display: flex;
   align-items: center;
   gap: 3rem;
@@ -114,18 +117,6 @@ Navbar
 }
 
 /* 
-======
-Home Screen
-======
- */
-.home-screen {
-  display: block;
-}
-.home-screen img {
-  height: auto;
-}
-
-/* 
 ====== 
 Buttons 
 ======
@@ -133,7 +124,6 @@ Buttons
 .btn,
 .btn-white,
 .btn-primary {
-  text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   color: var(--primaryColor);
   border: 2px solid var(--primaryColor);
@@ -145,7 +135,8 @@ Buttons
   background: transparent;
   border-radius: var(--mainBorderRadius);
   display: inline-block;
-  align-self: center;
+  margin-right: 2rem;
+  font-weight: bold;
 }
 .btn:hover {
   background: var(--primaryColor);
@@ -196,4 +187,70 @@ Error
 .error-container {
   text-align: center;
   text-transform: capitalize;
+}
+
+/* 
+Home
+ */
+.home-screen {
+  background-color: var(--homeBackground);
+  display: flex;
+  margin: auto;
+}
+.home-desc {
+  font-size: 2rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+  margin-bottom: 3.5rem;
+  margin-top: 10rem;
+}
+.home-text {
+  color: var(--darkText);
+  display: block;
+}
+.home-screen img {
+  width: 30rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+.section-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+  margin-bottom: 3.5rem;
+  margin-top: 1rem;
+}
+
+/* 
+Question
+ */
+.question {
+  text-align: center;
+}
+
+/* 
+====== 
+Drink
+======
+*/
+.result {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.result-message {
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+.drink {
+  width: var(--smallWidth);
+  max-width: var(--fullWidth);
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+.drink img {
+  border-radius: var(--mainBorderRadius);
+  margin: 0 auto 1rem;
 }

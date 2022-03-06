@@ -8,8 +8,8 @@ const Questions = () => {
   const question = questionData.find((item) => item.id === parseInt(id));
   const nextID = parseInt(id) + 1;
   return (
-    <div className="">
-      <h1>Question {id}</h1>
+    <div className="question">
+      <h1 className="section-title">Question {id}</h1>
       <h2>{question.question}</h2>
       {question.options.map((option, index) => {
         return (

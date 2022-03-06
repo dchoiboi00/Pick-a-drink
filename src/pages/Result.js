@@ -22,15 +22,22 @@ const Result = () => {
   });
   const index = distanceVector.indexOf(Math.min(...distanceVector));
 
+  const messages = [
+    "Cheap and wild",
+    "Memorable times with friends",
+    "Keep it classy",
+  ];
+
   return (
     <section className="result">
+      <h1 className="section-title">The drink for you is</h1>
       <div className="result-container">
-        <h1>The drink for you is</h1>
         <Drink id={index + 1} />
-        <Link to="/" className="btn btn-primary">
-          back home
-        </Link>
+        <h2 className="result-message">{messages[index]}</h2>
       </div>
+      <Link to="/" className="btn btn-primary">
+        back home
+      </Link>
     </section>
   );
 };

@@ -16,7 +16,6 @@ const reducer = (state, action) => {
 
 const initialState = {
   choiceVector: new Array(questionData.length).fill(0),
-  drink: null,
 };
 
 export const AppProvider = ({ children }) => {
