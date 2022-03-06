@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Questions from "./pages/Questions";
 import Error from "./pages/Error";
+import Result from "./pages/Result";
 //import components
 import logo from "./img/NBA_logo.png";
 function App() {
@@ -28,6 +29,7 @@ function App() {
         {/* About */}
         <Route path="/questions/:id" element={<Questions />} />
         <Route path="*" element={<Error />} />
+        <Route path="/result" element={<Result />} />
       </Routes>
     </Router>
   );
