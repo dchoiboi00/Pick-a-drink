@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Pick a Drink - BrickHack 8
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is available at [https://pickadrink-brickhack.netlify.app]
 
-## Available Scripts
+## Inspiration
 
-In the project directory, you can run:
+I don't go to bars much, so when I do, I'm always indecisive in choosing what to drink. What if there was an application that made it fun for me to choose a drink? Instead of making it boring like, "Is it a casual or formal occasion?" or "Do you prefer salty or sour?", I thought having a theme can appeal to a specific audience. It also uses a common marketing strategy to draw an emotional connection from the product to the buyer.
 
-### `npm start`
+## What it does
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The user can take a questionnaire by choosing an option in a series of questions, where at the end it displays a CBrand product with a message.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How we built it
 
-### `npm test`
+I used the React framework to build the application. I used react router to switch between webpages, and a useReducer hook to store user choices. The matching is done by comparing the user choice vector with the pre-defined vectors of the products using the Euclidean distance formula.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Challenges we ran into
 
-### `npm run build`
+I was going to try to find an API for the beverage data, but unfortunately the developer.cbrands.com website is currently down. So I just created my own json file with a small amount of data.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Accomplishments that we're proud of
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This was my very first react project that I built from start to finish! I've started learning Javascript just last month, so I thought I'd use the pressure of a hackathon to motivate me to create a presentable project, even if I know it's far from perfect.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## What we learned
 
-### `npm run eject`
+I learned that I struggle most with styling. Since most of my coding experience comes from data structures and algorithms, the matching algorithm was simple to make. I've never done front-end for a project, and I learned that making CSS stylesheets comes with experience. I hope to use this experience to make more interactive web applications!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## What's next for Pick a Drink
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+First, the dataset needs to be a lot bigger. More beverages, more questions. I also wanted to improve the overall design of the website, hopefully with the help of experienced CSS developers.
